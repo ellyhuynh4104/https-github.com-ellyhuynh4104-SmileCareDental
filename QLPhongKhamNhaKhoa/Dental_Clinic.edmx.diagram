@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="db98d90af20a41f19924fee215174bb3" Name="Diagram1">
+        <EntityTypeShape EntityType="DentalClinic_DatabaseModel.Account" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinic_DatabaseModel.AccountPermision" Width="1.5" PointX="7.5" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinic_DatabaseModel.Appointment" Width="1.5" PointX="5.25" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinic_DatabaseModel.DetailPermision" Width="1.5" PointX="7.5" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinic_DatabaseModel.DrugSupplier" Width="1.5" PointX="3.75" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinic_DatabaseModel.Medicine" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinic_DatabaseModel.Patient" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinic_DatabaseModel.Permision" Width="1.5" PointX="5.25" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinic_DatabaseModel.Position" Width="1.5" PointX="0.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinic_DatabaseModel.Prescription" Width="1.5" PointX="8.25" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinic_DatabaseModel.PrescriptionMedicine" Width="1.5" PointX="10.5" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinic_DatabaseModel.Receipt" Width="1.5" PointX="5.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinic_DatabaseModel.Service" Width="1.5" PointX="5.25" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinic_DatabaseModel.ServiceTreatment" Width="1.5" PointX="7.5" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinic_DatabaseModel.Staff" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinic_DatabaseModel.sysdiagram" Width="1.5" PointX="9.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinic_DatabaseModel.Treatment" Width="1.5" PointX="5.25" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinic_DatabaseModel.TypeMedicine" Width="1.5" PointX="6" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinic_DatabaseModel.WorkingStatu" Width="1.5" PointX="7.5" PointY="12.875" IsExpanded="true" />
+        <AssociationConnector Association="DentalClinic_DatabaseModel.FK__Account__StaffId__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinic_DatabaseModel.FK__AccountPe__Accou__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinic_DatabaseModel.FK__WorkingSt__Accou__693CA210" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinic_DatabaseModel.FK__AccountPe__Permi__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinic_DatabaseModel.FK__Appointme__Patie__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinic_DatabaseModel.FK__DetailPer__Permi__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinic_DatabaseModel.FK__TypeMedic__DrugS__68487DD7" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinic_DatabaseModel.FK__Medicine__TypeMe__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinic_DatabaseModel.FK__Prescript__Medic__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinic_DatabaseModel.FK__Prescript__Patie__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinic_DatabaseModel.FK__Receipt__Patient__619B8048" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinic_DatabaseModel.FK__Treatment__Patie__66603565" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinic_DatabaseModel.FK__Staff__PositionI__656C112C" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinic_DatabaseModel.FK__Prescript__Presc__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinic_DatabaseModel.FK__Prescript__Staff__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinic_DatabaseModel.FK__Receipt__StaffId__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinic_DatabaseModel.FK__ServiceTr__Servi__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinic_DatabaseModel.FK__ServiceTr__Treat__6477ECF3" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinic_DatabaseModel.FK__Treatment__Staff__6754599E" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

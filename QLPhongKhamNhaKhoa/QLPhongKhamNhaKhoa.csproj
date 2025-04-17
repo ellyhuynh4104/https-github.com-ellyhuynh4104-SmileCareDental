@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A7FA40C-8F6F-4EBB-AF80-F57A460691A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLPhongKhamNhaKhoa</RootNamespace>
+    <AssemblyName>QLPhongKhamNhaKhoa</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.337.80\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.337.80\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.337.80\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.337.80\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.337.80\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs">
+      <DependentUpon>Dental_Clinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccountPermision.cs">
+      <DependentUpon>Dental_Clinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Appointment.cs">
+      <DependentUpon>Dental_Clinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DentalClinic_DatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DentalClinic_DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dental_Clinic.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dental_Clinic.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dental_Clinic.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dental_Clinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dental_Clinic.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dental_Clinic.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailPermision.cs">
+      <DependentUpon>Dental_Clinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DrugSupplier.cs">
+      <DependentUpon>Dental_Clinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddBenhNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddBenhNhan.Designer.cs">
+      <DependentUpon>FormAddBenhNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddDichVuDieuTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddDichVuDieuTri.Designer.cs">
+      <DependentUpon>FormAddDichVuDieuTri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddDieuTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddDieuTri.Designer.cs">
+      <DependentUpon>FormAddDieuTri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddDvu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddDvu.Designer.cs">
+      <DependentUpon>FormAddDvu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddLichHen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddLichHen.Designer.cs">
+      <DependentUpon>FormAddLichHen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddNVBS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddNVBS.Designer.cs">
+      <DependentUpon>FormAddNVBS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddThuoc.Designer.cs">
+      <DependentUpon>FormAddThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteBenhNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteBenhNhan.Designer.cs">
+      <DependentUpon>FormDeleteBenhNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteDvu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteDvu.Designer.cs">
+      <DependentUpon>FormDeleteDvu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteLichHen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteLichHen.Designer.cs">
+      <DependentUpon>FormDeleteLichHen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteNVBS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteNVBS.Designer.cs">
+      <DependentUpon>FormDeleteNVBS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteThuoc.Designer.cs">
+      <DependentUpon>FormDeleteThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDonThuocDieuTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDonThuocDieuTri.Designer.cs">
+      <DependentUpon>FormDonThuocDieuTri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditBenhNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditBenhNhan.Designer.cs">
+      <DependentUpon>FormEditBenhNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditDieuTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditDieuTri.Designer.cs">
+      <DependentUpon>FormEditDieuTri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditDvu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditDvu.Designer.cs">
+      <DependentUpon>FormEditDvu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditLichHen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditLichHen.Designer.cs">
+      <DependentUpon>FormEditLichHen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditNVBS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditNVBS.Designer.cs">
+      <DependentUpon>FormEditNVBS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditThuoc.Designer.cs">
+      <DependentUpon>FormEditThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogIn.Designer.cs">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicine.cs">
+      <DependentUpon>Dental_Clinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Patient.cs">
+      <DependentUpon>Dental_Clinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Permision.cs">
+      <DependentUpon>Dental_Clinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Position.cs">
+      <DependentUpon>Dental_Clinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Prescription.cs">
+      <DependentUpon>Dental_Clinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PrescriptionMedicine.cs">
+      <DependentUpon>Dental_Clinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Receipt.cs">
+      <DependentUpon>Dental_Clinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportBenhNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportBenhNhan.Designer.cs">
+      <DependentUpon>ReportBenhNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportThuoc.Designer.cs">
+      <DependentUpon>ReportThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service.cs">
+      <DependentUpon>Dental_Clinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceTreatment.cs">
+      <DependentUpon>Dental_Clinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Staff.cs">
+      <DependentUpon>Dental_Clinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>Dental_Clinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Treatment.cs">
+      <DependentUpon>Dental_Clinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TypeMedicine.cs">
+      <DependentUpon>Dental_Clinic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UCQuanLyBenhNhan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQuanLyBenhNhan.Designer.cs">
+      <DependentUpon>UCQuanLyBenhNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCQuanLyDichVu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQuanLyDichVu.Designer.cs">
+      <DependentUpon>UCQuanLyDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCQuanLyDieuTri.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQuanLyDieuTri.Designer.cs">
+      <DependentUpon>UCQuanLyDieuTri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCQuanLyLichHen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQuanLyLichHen.Designer.cs">
+      <DependentUpon>UCQuanLyLichHen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCQuanLyNVBS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQuanLyNVBS.Designer.cs">
+      <DependentUpon>UCQuanLyNVBS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCQuanLyThanhToan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQuanLyThanhToan.Designer.cs">
+      <DependentUpon>UCQuanLyThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCQuanLyThuoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQuanLyThuoc.Designer.cs">
+      <DependentUpon>UCQuanLyThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCThongKe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCThongKe.Designer.cs">
+      <DependentUpon>UCThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCThongKeBenhNhan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCThongKeBenhNhan.Designer.cs">
+      <DependentUpon>UCThongKeBenhNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCThongKeDoanhThu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCThongKeDoanhThu.Designer.cs">
+      <DependentUpon>UCThongKeDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingStatu.cs">
+      <DependentUpon>Dental_Clinic.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormAddBenhNhan.resx">
+      <DependentUpon>FormAddBenhNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddDichVuDieuTri.resx">
+      <DependentUpon>FormAddDichVuDieuTri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddDieuTri.resx">
+      <DependentUpon>FormAddDieuTri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddDvu.resx">
+      <DependentUpon>FormAddDvu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddLichHen.resx">
+      <DependentUpon>FormAddLichHen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddNVBS.resx">
+      <DependentUpon>FormAddNVBS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddThuoc.resx">
+      <DependentUpon>FormAddThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteBenhNhan.resx">
+      <DependentUpon>FormDeleteBenhNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteDvu.resx">
+      <DependentUpon>FormDeleteDvu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteLichHen.resx">
+      <DependentUpon>FormDeleteLichHen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteNVBS.resx">
+      <DependentUpon>FormDeleteNVBS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteThuoc.resx">
+      <DependentUpon>FormDeleteThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDonThuocDieuTri.resx">
+      <DependentUpon>FormDonThuocDieuTri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditBenhNhan.resx">
+      <DependentUpon>FormEditBenhNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditDieuTri.resx">
+      <DependentUpon>FormEditDieuTri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditDvu.resx">
+      <DependentUpon>FormEditDvu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditLichHen.resx">
+      <DependentUpon>FormEditLichHen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditNVBS.resx">
+      <DependentUpon>FormEditNVBS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditThuoc.resx">
+      <DependentUpon>FormEditThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogIn.resx">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportBenhNhan.resx">
+      <DependentUpon>ReportBenhNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportBN.rdlc" />
+    <EmbeddedResource Include="ReportThuoc.rdlc" />
+    <EmbeddedResource Include="ReportThuoc.resx">
+      <DependentUpon>ReportThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCQuanLyBenhNhan.resx">
+      <DependentUpon>UCQuanLyBenhNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCQuanLyDichVu.resx">
+      <DependentUpon>UCQuanLyDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCQuanLyDieuTri.resx">
+      <DependentUpon>UCQuanLyDieuTri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCQuanLyLichHen.resx">
+      <DependentUpon>UCQuanLyLichHen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCQuanLyNVBS.resx">
+      <DependentUpon>UCQuanLyNVBS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCQuanLyThanhToan.resx">
+      <DependentUpon>UCQuanLyThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCQuanLyThuoc.resx">
+      <DependentUpon>UCQuanLyThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCThongKe.resx">
+      <DependentUpon>UCThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCThongKeBenhNhan.resx">
+      <DependentUpon>UCThongKeBenhNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCThongKeDoanhThu.resx">
+      <DependentUpon>UCThongKeDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Dental_Clinic.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Dental_Clinic.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DentalClinic_DatabaseDataSet.xsc">
+      <DependentUpon>DentalClinic_DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DentalClinic_DatabaseDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DentalClinic_DatabaseDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DentalClinic_DatabaseDataSet.xss">
+      <DependentUpon>DentalClinic_DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Dental_Clinic.edmx.diagram">
+      <DependentUpon>Dental_Clinic.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dental_Clinic.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Dental_Clinic.Context.cs</LastGenOutput>
+      <DependentUpon>Dental_Clinic.edmx</DependentUpon>
+    </Content>
+    <Content Include="Dental_Clinic.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Dental_Clinic.edmx</DependentUpon>
+      <LastGenOutput>Dental_Clinic.cs</LastGenOutput>
+    </Content>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\anhnen.jpg" />
+    <None Include="Resources\eb1373495a6ffd21fe837d1ac4db05b81.png" />
+    <None Include="Resources\eb1373495a6ffd21fe837d1ac4db05b8.png" />
+    <None Include="Resources\Home_26px.png" />
+    <None Include="Resources\Menu_48px.png" />
+    <None Include="Resources\Delete File_26px.png" />
+    <None Include="Resources\Edit File_26px.png" />
+    <None Include="Resources\Add File_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
